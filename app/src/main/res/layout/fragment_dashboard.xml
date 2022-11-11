@@ -196,14 +196,23 @@
                 android:layout_marginTop="1dp"
                 android:text="food" />
 
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/edittext1"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:hint="@string/select"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_alignLeft="@+id/textView1"
                 android:layout_below="@+id/textView1"
                 android:ems="10"
-                android:text="enter text" android:inputType="text" />
+                android:text="enter text" android:inputType="text">
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
 
             <TextView
                 android:id="@+id/textView2"
@@ -231,7 +240,8 @@
                 android:layout_centerInParent="true"
                 android:layout_below="@+id/textView2"
                 android:layout_marginTop="50dp"
-                android:text="Search" />
+                android:text="Search"
+                android:layout_marginBottom="55dp" />
 
         </RelativeLayout>
 

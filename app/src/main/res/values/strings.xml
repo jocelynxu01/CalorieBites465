@@ -34,4 +34,6 @@
         <item>November 10th, 2022</item>
         <item>November 9th, 2022</item>
     </string-array>
+
+    <string name="select">Select Item</string>
 </resources>

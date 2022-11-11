@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,6 +16,12 @@ import edu.illinois.cs465.caloriebites465.databinding.FragmentDashboardBinding;
 
 public class DashboardFragment extends Fragment {
 
+    String[] items = {"Hamburger", "Hot dog", "Bread", "Sandwich", "Apple"};
+
+    AutoCompleteTextView autoCompleteTxt;
+
+    ArrayAdapter<String> adapterItems;
+
     private FragmentDashboardBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -23,6 +31,9 @@ public class DashboardFragment extends Fragment {
 
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+//        autoCompleteTxt = findViewById(R.id.)
+
 
         return root;
     }
