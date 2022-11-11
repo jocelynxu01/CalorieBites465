@@ -18,9 +18,11 @@
             android:layout_height="wrap_content"
             android:text="11/10/2022"
             android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:textColor="@color/black"
             android:gravity="left"
-            android:textSize="16sp"/>
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view"
@@ -166,7 +168,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="left">
+            android:gravity="center">
 
             <ProgressBar
                 android:id="@+id/simpleProgressBar"
