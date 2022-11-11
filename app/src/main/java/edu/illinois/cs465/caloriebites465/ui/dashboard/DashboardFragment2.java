@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import edu.illinois.cs465.caloriebites465.R;
+
 public class DashboardFragment2 extends AppCompatActivity {
 
     @Override
