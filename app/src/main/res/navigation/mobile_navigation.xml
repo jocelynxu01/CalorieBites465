@@ -21,5 +21,5 @@
         android:id="@+id/navigation_notifications"
         android:name="edu.illinois.cs465.caloriebites465.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_rewards" />
 </navigation>

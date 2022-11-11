@@ -20,4 +20,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="past_records">Past Records</string>
+    <string name="search">Search</string>
+    <string name="rewards">Rewards</string>
 </resources>
