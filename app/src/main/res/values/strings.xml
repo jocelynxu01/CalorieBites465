@@ -23,4 +23,15 @@
     <string name="past_records">Past Records</string>
     <string name="search">Search</string>
     <string name="rewards">Rewards</string>
+    <string-array name="past_records_array">
+        <item>November 17th, 2022</item>
+        <item>November 16th, 2022</item>
+        <item>November 15th, 2022</item>
+        <item>November 14th, 2022</item>
+        <item>November 13th, 2022</item>
+        <item>November 12th, 2022</item>
+        <item>November 11th, 2022</item>
+        <item>November 10th, 2022</item>
+        <item>November 9th, 2022</item>
+    </string-array>
 </resources>
