@@ -71,7 +71,7 @@
             android:orientation="vertical">
 
             <ListView
-                android:id="@+id/pastRecordsList"
+                android:id="@+id/xyzz"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </LinearLayout>
