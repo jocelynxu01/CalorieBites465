@@ -10,153 +10,170 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical"
-        android:gravity="center">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="11/10/2022"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:textColor="@color/black"
-            android:gravity="left"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="8"
+                android:gravity="left"
+                android:text="11/10/2022"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="right"
+                android:src="@drawable/settings" />
+
+        </LinearLayout>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            app:cardElevation="11dp"
             app:cardCornerRadius="11dp"
+            app:cardElevation="11dp"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:orientation="horizontal"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:layout_weight="1">
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:scaleType="centerCrop"
                         android:layout_gravity="center"
-                        android:src="@drawable/walking"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginRight="10dp"/>
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/walking" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
                         android:text="100"
                         android:textColor="@color/black"
-                        android:gravity="center_horizontal"
-                        android:textSize="60sp"
-                        android:layout_weight="1"/>
+                        android:textSize="60sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:text="steps"
                         android:textColor="@color/black"
-                        android:gravity="center"
-                        android:textSize="24sp"
-                        android:layout_weight="1"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginLeft="10dp"/>
+                        android:textSize="24sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:orientation="horizontal"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:layout_weight="1">
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:scaleType="centerCrop"
                         android:layout_gravity="center"
-                        android:src="@drawable/crown"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginRight="10dp"/>
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/crown" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
                         android:text="638"
                         android:textColor="@color/black"
-                        android:gravity="center_horizontal"
-                        android:textSize="60sp"
-                        android:layout_weight="1"/>
+                        android:textSize="60sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
                         android:text="calories"
                         android:textColor="@color/black"
-                        android:gravity="center_horizontal"
-                        android:textSize="24sp"
-                        android:layout_weight="1"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginLeft="10dp"/>
+                        android:textSize="24sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:orientation="horizontal"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:layout_weight="1">
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:scaleType="centerCrop"
                         android:layout_gravity="center"
-                        android:src="@drawable/cutlery"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginRight="10dp"/>
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cutlery" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
                         android:text="5"
                         android:textColor="@color/black"
-                        android:gravity="center_horizontal"
-                        android:textSize="60sp"
-                        android:layout_weight="1"/>
+                        android:textSize="60sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
                         android:text="apples"
                         android:textColor="@color/black"
-                        android:gravity="center_horizontal"
-                        android:textSize="24sp"
-                        android:layout_weight="1"/>
+                        android:textSize="24sp" />
 
                     <ImageButton
                         android:id="@+id/simpleImageButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
-                        android:src="@drawable/shuffle"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginRight="20dp"
-                        android:layout_marginLeft="10dp"/>
+                        android:background="@color/white"
+                        android:src="@drawable/shuffle" />
 
                 </LinearLayout>
 
@@ -167,35 +184,35 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <ProgressBar
                 android:id="@+id/simpleProgressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:layout_weight="1"
                 android:max="100"
-                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                android:progress="50"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp" /><!--// 50 default progress value-->
+                android:progress="50" /><!--// 50 default progress value-->
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:scaleType="centerCrop"
                 android:layout_gravity="top"
-                android:src="@drawable/gift_icon"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginRight="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gift_icon" />
 
         </LinearLayout>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/carrot"
-            android:layout_marginBottom="55dp"/>
+            android:layout_marginBottom="55dp"
+            android:src="@drawable/carrot" />
 
     </LinearLayout>
 
