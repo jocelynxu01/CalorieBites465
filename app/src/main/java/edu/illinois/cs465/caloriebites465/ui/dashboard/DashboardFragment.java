@@ -1,5 +1,6 @@
 package edu.illinois.cs465.caloriebites465.ui.dashboard;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +13,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
+import edu.illinois.cs465.caloriebites465.Converter;
 import edu.illinois.cs465.caloriebites465.R;
+import edu.illinois.cs465.caloriebites465.Rewards;
 import edu.illinois.cs465.caloriebites465.databinding.FragmentDashboardBinding;
 
 public class DashboardFragment extends Fragment {
@@ -32,12 +35,8 @@ public class DashboardFragment extends Fragment {
         caloriesTab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new DashboardFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragment2, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                Intent intent = new Intent(getActivity(), Converter.class);
+                startActivity(intent);
             }
         });
 
