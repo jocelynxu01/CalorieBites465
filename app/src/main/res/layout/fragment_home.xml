@@ -173,7 +173,8 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="20dp"
                         android:background="@color/white"
-                        android:src="@drawable/shuffle" />
+                        android:src="@drawable/shuffle"
+                        android:tint="#4AAE33"  />
 
                 </LinearLayout>
 
