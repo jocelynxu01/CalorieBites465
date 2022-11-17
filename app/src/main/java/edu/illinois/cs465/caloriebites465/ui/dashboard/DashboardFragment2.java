@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import edu.illinois.cs465.caloriebites465.databinding.FragmentDashboardBinding
+import edu.illinois.cs465.caloriebites465.databinding.FragmentDashboardBinding;
 
 public class DashboardFragment2 extends Fragment {
 

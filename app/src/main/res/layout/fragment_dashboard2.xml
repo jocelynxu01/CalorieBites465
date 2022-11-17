@@ -7,6 +7,7 @@
     tools:context=".ui.dashboard.DashboardFragment2">
 
     <LinearLayout
+        android:id="@+id/fragment2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -161,6 +162,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/foodTab"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -171,7 +173,7 @@
                 android:textSize="20sp" />
 
             <Button
-                android:id="@+id/navBackToCalories_btn"
+                android:id="@+id/caloriesTab"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
