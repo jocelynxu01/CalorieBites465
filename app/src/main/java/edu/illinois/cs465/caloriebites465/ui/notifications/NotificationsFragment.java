@@ -21,22 +21,6 @@ import edu.illinois.cs465.caloriebites465.databinding.FragmentRewardsBinding;
 public class NotificationsFragment extends Fragment {
 
     private FragmentRewardsBinding binding;
-    /*
-
-    https://stackoverflow.com/questions/23212162/how-to-move-from-one-fragment-to-another-fragment-on-click-of-an-imageview-in-an
-
-    purple.setOnClickListener(new OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Fragment fragment = new tasks();
-            FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.content_frame, fragment);
-            fragmentTransaction.addToBackStack(null);
-            fragmentTransaction.commit();
-        }
-    });
-     */
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -45,7 +29,6 @@ public class NotificationsFragment extends Fragment {
 
         binding = FragmentRewardsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
 
         ListView pastRecords = (ListView)root.findViewById(R.id.pastRecordsList);
 

@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
 import edu.illinois.cs465.caloriebites465.R;
@@ -32,13 +34,17 @@ public class DashboardFragment extends Fragment {
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        ListView pastRecords = (ListView)root.findViewById(R.id.pastRecordsList);
+        Button caloriesTab = (Button) root.findViewById(R.id.caloriesTab);
 
-        pastRecords.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        caloriesTab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getActivity(), Rewards.class);
-                startActivity(intent);
+            public void onClick(View v) {
+                Fragment fragment = new DashboardFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.NEW_FRAGMENT_FRAME, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
             }
         });
 
