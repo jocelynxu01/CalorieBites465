@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.dashboard.DashboardFragment2">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -160,23 +159,26 @@
             android:layout_marginRight="20dp"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <Button
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_weight="1"
-                android:textSize="20sp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="food"
                 android:textColor="@color/black"
-                android:text="food" />
+                android:textSize="20sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/navBackToCalories_btn"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:layout_weight="1"
                 android:textSize="20sp"
                 android:textColor="@color/black"
+                android:background="@android:color/transparent"
                 android:text="calories" />
         </LinearLayout>
 

@@ -160,23 +160,27 @@
             android:layout_marginRight="20dp"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/navBackToFood_btn"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:layout_weight="1"
                 android:textSize="20sp"
                 android:textColor="@color/black"
+                android:background="@android:color/transparent"
                 android:text="food" />
 
-            <TextView
-                android:layout_width="wrap_content"
+            <Button
+                android:layout_width="0dp"
+                android:onClick="go"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:textSize="20sp"
                 android:textColor="@color/black"
+                android:background="@android:color/transparent"
                 android:text="calories" />
         </LinearLayout>
 
