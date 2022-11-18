@@ -1,50 +1,73 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <PreferenceCategory app:title="Food Preferences">
-        <ListPreference
-            app:defaultValue="reply"
-            app:entries="@array/reply_entries"
-            app:entryValues="@array/reply_values"
-            app:key="Foods"
-            app:title="Food Preferences"
-            app:useSimpleSummaryProvider="true" />
-    </PreferenceCategory>
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="73dp"
+        android:layout_height="46dp"
+        app:srcCompat="@drawable/ic_baseline_chevron_left_24"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="8dp" /> -->
 
-    <PreferenceCategory app:title="Notifications"
-        app:icon="@drawable/ic_notifications_black_24dp">
-        <SwitchPreferenceCompat
-            app:key="AfterWalk"
-            app:title="After Walk" />
+    <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
-        <SwitchPreferenceCompat
-            app:key="AfterBadge"
-            app:title="After Badge" />
+        <PreferenceCategory app:title="Food Preferences">
+            <ListPreference
+                app:defaultValue="Apples"
+                app:dialogTitle="Food Preferences"
+                app:entries="@array/foods_array"
+                app:entryValues="@array/foods_array"
+                app:key="food_preference_key"
+                app:title="Food Preferences"
+                app:useSimpleSummaryProvider="true" />
+        </PreferenceCategory>
 
-        <SwitchPreferenceCompat
-            app:key="AfterCharacter"
-            app:title="After Unlocking Character" />
+        <PreferenceCategory app:title="Notifications">
+            <SwitchPreferenceCompat
+                app:key="AfterWalk"
+                app:title="After Walk" />
 
-    </PreferenceCategory>
+            <SwitchPreferenceCompat
+                app:key="AfterBadge"
+                app:title="After Badge" />
 
-    <PreferenceCategory app:title="Units">
-        <ListPreference
-            app:key="stepsVsMin"
-            app:title="Steps vs. Min" />
+            <SwitchPreferenceCompat
+                app:key="AfterCharacter"
+                app:title="After Unlocking Character" />
 
-        <ListPreference
-            app:key="calVsKcal"
-            app:title="Cal vs. Kcal" />
+        </PreferenceCategory>
 
-    </PreferenceCategory>
+        <PreferenceCategory app:title="Units">
+            <ListPreference
+                app:defaultValue="Steps"
+                app:dialogTitle="Steps vs. Min"
+                app:entries="@array/steps_vs_min_array"
+                app:entryValues="@array/steps_vs_min_array"
+                app:key="stepsVsMin"
+                app:title="Steps vs. Min"
+                app:useSimpleSummaryProvider="true"/>
 
-    <PreferenceCategory app:title="Personal Data">
-        <EditTextPreference
-            app:key="height"
-            app:title="Height" />
+            <ListPreference
+                app:defaultValue="Cal"
+                app:dialogTitle="Cal vs. Kcal"
+                app:entries="@array/cal_vs_kcal_array"
+                app:entryValues="@array/cal_vs_kcal_array"
+                app:key="calVsKcal"
+                app:title="Cal vs. Kcal"
+                app:useSimpleSummaryProvider="true"/>
 
-        <EditTextPreference
-            app:key="weight"
-            app:title="Weight" />
-    </PreferenceCategory>
+        </PreferenceCategory>
 
-</PreferenceScreen>
+        <PreferenceCategory app:title="Personal Data">
+            <EditTextPreference
+                app:key="height"
+                app:title="Height" />
+
+            <EditTextPreference
+                app:key="weight"
+                app:title="Weight" />
+        </PreferenceCategory>
+
+    </PreferenceScreen>
+<!-- </LinearLayout> -->
