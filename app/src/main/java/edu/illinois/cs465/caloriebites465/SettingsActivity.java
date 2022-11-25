@@ -11,9 +11,9 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.settings_activity);
 
+        // elevating root_preferences to view
         if (findViewById(R.id.settings_activity_id) != null) {
             if (savedInstanceState != null) {
                 return;
@@ -24,7 +24,6 @@ public class SettingsActivity extends AppCompatActivity {
                     .commit();
         }
 
-
         // below line is to change
         // the title of our action bar.
         ActionBar actionBar = getSupportActionBar();
@@ -32,7 +31,6 @@ public class SettingsActivity extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setTitle("Settings");
         }
-
     }
 
     // Enabling Back Button Press on Action Bar
@@ -42,32 +40,3 @@ public class SettingsActivity extends AppCompatActivity {
         return true;
     }
 }
-
-/*
-public class SettingsActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.settings_activity);
-
-        // below line is used to check if
-        // frame layout is empty or not.
-        if (findViewById(R.id.settings_activity_id) != null) {
-            if (savedInstanceState != null) {
-                return;
-            }
-            // below line is to inflate our fragment.
-            getFragmentManager().beginTransaction().add(R.id.settings_activity_id, new SettingsFragment()).commit();
-        }
-
-        // below line is to change
-        // the title of our action bar.
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setTitle("Settings");
-        }
-
-    }
-}*/
