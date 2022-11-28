@@ -1,15 +1,22 @@
 package edu.illinois.cs465.caloriebites465.ui.dashboard;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import edu.illinois.cs465.caloriebites465.R;
+import edu.illinois.cs465.caloriebites465.Rewards;
+import edu.illinois.cs465.caloriebites465.SettingsActivity;
 import edu.illinois.cs465.caloriebites465.databinding.FragmentDashboardBinding;
 
 public class DashboardFragment2 extends Fragment {

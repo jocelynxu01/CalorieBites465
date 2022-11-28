@@ -9,9 +9,11 @@
         android:id="@+id/imageButton"
         android:layout_width="73dp"
         android:layout_height="46dp"
+        android:backgroundTint="@color/white"
         app:srcCompat="@drawable/ic_baseline_chevron_left_24"
         tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="8dp" />
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
@@ -22,7 +24,8 @@
         android:scaleY="2"
         android:text="Rewards"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="120dp" />
+        tools:layout_editor_absoluteX="120dp"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -99,19 +102,21 @@
             android:layout_height="150dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imageView5"
-                android:layout_width="297dp"
-                android:layout_height="105dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/chicken" />
+                android:backgroundTint="@color/white"
+                app:srcCompat="@drawable/gyoza" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imageView6"
                 android:layout_width="wrap_content"
-                android:layout_height="101dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/soup" />
+                android:backgroundTint="@color/white"
+                app:srcCompat="@drawable/spaghetti" />
         </LinearLayout>
 
     </LinearLayout>
