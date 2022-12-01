@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
 import java.util.Random;
@@ -48,7 +49,7 @@ public class DashboardFragment extends Fragment {
 //            public void onClick(View v) {
 //                DashboardFragment2 dashboardFragment2 = new DashboardFragment2();
 //                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-//                transaction.replace(container.getId(), dashboardFragment2);
+//                transaction.replace(((ViewGroup)getView().getParent()).getId(), dashboardFragment2);
 //                transaction.commit();
 //            }
 //        });

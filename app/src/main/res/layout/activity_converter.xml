@@ -44,6 +44,7 @@
               android:layout_marginRight="10dp"/>
 
           <TextView
+              android:id="@+id/output_number"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="638"
@@ -82,6 +83,7 @@
               android:layout_marginRight="10dp"/>
 
           <TextView
+              android:id="@+id/numSteps"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="100"
@@ -120,6 +122,7 @@
               android:layout_marginRight="10dp"/>
 
           <TextView
+              android:id="@+id/numFood"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="5"
@@ -192,7 +195,7 @@
           android:text="Calories" />
 
       <EditText
-          android:id="@+id/edittext1"
+          android:id="@+id/input_number"
           android:layout_width="fill_parent"
           android:layout_height="wrap_content"
           android:layout_alignLeft="@+id/textView1"
@@ -202,15 +205,15 @@
           android:inputType="text" />
 
       <Button
-          android:id="@+id/button"
+          android:id="@+id/searchButton"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_below="@+id/textView1"
           android:layout_centerInParent="true"
           android:layout_marginTop="50dp"
           android:layout_marginBottom="55dp"
-          android:textAllCaps="false"
-          android:text="Search" />
+          android:text="Search"
+          android:textAllCaps="false" />
 
     </RelativeLayout>
 
