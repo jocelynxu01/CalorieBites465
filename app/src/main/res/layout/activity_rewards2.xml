@@ -19,12 +19,13 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="16dp"
         android:scaleX="2"
         android:scaleY="2"
         android:text="Rewards"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="120dp"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
