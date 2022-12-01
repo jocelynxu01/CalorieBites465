@@ -15,29 +15,42 @@ import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import edu.illinois.cs465.caloriebites465.databinding.ActivityConverterBinding;
 import edu.illinois.cs465.caloriebites465.ui.dashboard.DashboardFragment;
 
 public class Converter extends AppCompatActivity {
-
+    ActivityConverterBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_converter);
+        binding = ActivityConverterBinding.inflate(getLayoutInflater());
+//        setContentView(R.layout.activity_converter);
+        setContentView(binding.getRoot());
 
-        Button foodTab = (Button) findViewById(R.id.foodTab);
-
-        foodTab.setOnClickListener(new View.OnClickListener() {
-
+        binding.foodTab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Fragment fragment = new DashboardFragment();
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragment1, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                DashboardFragment fragment = new DashboardFragment();
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment1, fragment);
+                transaction.commit();
             }
         });
+
+//        Button foodTab = (Button) findViewById(R.id.foodTab);
+//
+//        foodTab.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View view) {
+//
+//                Fragment fragment = new DashboardFragment();
+//                FragmentManager fragmentManager = getSupportFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.fragment1, fragment);
+//                fragmentTransaction.addToBackStack(null);
+//                fragmentTransaction.commit();
+//            }
+//        });
     }
 }

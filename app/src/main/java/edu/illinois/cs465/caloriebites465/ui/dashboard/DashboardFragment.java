@@ -42,6 +42,28 @@ public class DashboardFragment extends Fragment {
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+        // go to calories page
+//        binding.caloriesTab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                DashboardFragment2 dashboardFragment2 = new DashboardFragment2();
+//                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+//                transaction.replace(container.getId(), dashboardFragment2);
+//                transaction.commit();
+//            }
+//        });
+
+        Button caloriesTab = (Button) root.findViewById(R.id.caloriesTab);
+
+        caloriesTab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Converter.class);
+                startActivity(intent);
+            }
+        });
+
+        // drop down list
         autoCompleteTextView = root.findViewById(R.id.auto_complete_textview);
 
         adapterItems = new ArrayAdapter<String>(getActivity(), R.layout.list_item, item);
@@ -55,16 +77,7 @@ public class DashboardFragment extends Fragment {
             }
         });
 
-        Button caloriesTab = (Button) root.findViewById(R.id.caloriesTab);
-
-        caloriesTab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), Converter.class);
-                startActivity(intent);
-            }
-        });
-
+        // search
         Button btn = (Button) root.findViewById(R.id.searchButton);
 
         btn.setOnClickListener(new View.OnClickListener() {
