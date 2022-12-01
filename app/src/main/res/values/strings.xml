@@ -47,15 +47,15 @@
     <string name="search">Search</string>
     <string name="rewards">Rewards</string>
     <string-array name="past_records_array">
-        <item>November 17th, 2022</item>
-        <item>November 16th, 2022</item>
-        <item>November 15th, 2022</item>
-        <item>November 14th, 2022</item>
-        <item>November 13th, 2022</item>
-        <item>November 12th, 2022</item>
-        <item>November 11th, 2022</item>
-        <item>November 10th, 2022</item>
-        <item>November 9th, 2022</item>
+        <item>December 2th, 2022</item>
+        <item>December 1th, 2022</item>
+        <item>November 30th, 2022</item>
+        <item>November 29th, 2022</item>
+        <item>November 28th, 2022</item>
+        <item>November 27th, 2022</item>
+        <item>November 26th, 2022</item>
+        <item>November 25th, 2022</item>
+        <item>November 24th, 2022</item>
     </string-array>
 
     <string name="select">Select Item</string>
