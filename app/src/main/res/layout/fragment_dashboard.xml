@@ -45,6 +45,7 @@
                         android:layout_marginRight="10dp"/>
 
                     <TextView
+                        android:id="@+id/output_number"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="5"
@@ -54,6 +55,7 @@
                         android:layout_weight="1"/>
 
                     <TextView
+                        android:id="@+id/output_food"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="apples"
@@ -81,6 +83,7 @@
                         android:layout_marginRight="10dp"/>
 
                     <TextView
+                        android:id="@+id/numSteps"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="100"
@@ -119,6 +122,7 @@
                         android:layout_marginRight="10dp"/>
 
                     <TextView
+                        android:id="@+id/numCalories"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="638"
@@ -190,10 +194,10 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="14dp"
                 android:layout_marginTop="1dp"
-                android:text="food" />
+                android:text="Food" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/edittext1"
+                android:id="@+id/dropdown_menu"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/select"
@@ -217,27 +221,29 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="14dp"
-                android:layout_marginTop="80dp"
-                android:text="quantity" />
+                android:layout_marginTop="90dp"
+                android:text="Quantity" />
 
             <EditText
-                android:id="@+id/edittext2"
+                android:id="@+id/input_number"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@+id/textView2"
                 android:layout_below="@+id/textView2"
                 android:ems="10"
-                android:text="enter text" android:inputType="text" />
+                android:hint="Enter Number"
+                android:inputType="text" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/searchButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_below="@+id/textView2"
+                android:layout_centerInParent="true"
                 android:layout_marginTop="50dp"
-                android:text="Search"
-                android:layout_marginBottom="55dp" />
+                android:layout_marginBottom="55dp"
+                android:textAllCaps="false"
+                android:text="Search" />
 
         </RelativeLayout>
 

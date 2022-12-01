@@ -137,16 +137,6 @@
               android:textSize="24sp"
               android:layout_weight="1"/>
 
-          <ImageButton
-              android:id="@+id/simpleImageButton"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:background="@color/white"
-              android:src="@drawable/shuffle"
-              android:layout_marginRight="20dp"
-              android:layout_marginLeft="10dp"
-              android:tint="#4AAE33"  />
-
         </LinearLayout>
 
       </LinearLayout>
@@ -199,7 +189,7 @@
           android:layout_alignParentTop="true"
           android:layout_marginLeft="14dp"
           android:layout_marginTop="1dp"
-          android:text="calories" />
+          android:text="Calories" />
 
       <EditText
           android:id="@+id/edittext1"
@@ -208,17 +198,19 @@
           android:layout_alignLeft="@+id/textView1"
           android:layout_below="@+id/textView1"
           android:ems="10"
-          android:text="enter text" android:inputType="text" />
+          android:hint="Enter Number"
+          android:inputType="text" />
 
       <Button
           android:id="@+id/button"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_centerInParent="true"
           android:layout_below="@+id/textView1"
+          android:layout_centerInParent="true"
           android:layout_marginTop="50dp"
-          android:text="Search"
-          android:layout_marginBottom="55dp" />
+          android:layout_marginBottom="55dp"
+          android:textAllCaps="false"
+          android:text="Search" />
 
     </RelativeLayout>
 
