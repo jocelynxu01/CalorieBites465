@@ -1,8 +1,12 @@
 package edu.illinois.cs465.caloriebites465;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -10,12 +14,24 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
+import edu.illinois.cs465.caloriebites465.ui.notifications.NotificationsFragment;
+
 public class Rewards extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rewards2);
+
+        ImageButton back = (ImageButton) findViewById(R.id.imageButton);
+        NotificationsFragment notificationsFragment = new NotificationsFragment();
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, notificationsFragment).addToBackStack(Rewards.class.getSimpleName()).commit();
+            }
+        });
 
         // Initializing Settings Button
         ImageButton dumpling_btn = (ImageButton) findViewById(R.id.imageView5);
