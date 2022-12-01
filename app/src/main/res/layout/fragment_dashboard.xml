@@ -40,6 +40,42 @@
                         android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
                         android:layout_gravity="center"
+                        android:src="@drawable/cutlery"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="@color/black"
+                        android:gravity="center_horizontal"
+                        android:textSize="60sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="apples"
+                        android:textColor="@color/black"
+                        android:gravity="center_horizontal"
+                        android:textSize="24sp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
                         android:src="@drawable/walking"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="10dp"/>
@@ -101,52 +137,6 @@
                         android:layout_weight="1"
                         android:layout_marginRight="20dp"
                         android:layout_marginLeft="10dp"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:orientation="horizontal"
-                    android:gravity="center"
-                    android:layout_weight="1">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:scaleType="centerCrop"
-                        android:layout_gravity="center"
-                        android:src="@drawable/cutlery"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="10dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="5"
-                        android:textColor="@color/black"
-                        android:gravity="center_horizontal"
-                        android:textSize="60sp"
-                        android:layout_weight="1"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="apples"
-                        android:textColor="@color/black"
-                        android:gravity="center_horizontal"
-                        android:textSize="24sp"
-                        android:layout_weight="1"/>
-
-                    <ImageButton
-                        android:id="@+id/simpleImageButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@color/white"
-                        android:src="@drawable/shuffle"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginLeft="10dp"
-                        android:tint="#4AAE33" />
 
                 </LinearLayout>
 
@@ -213,7 +203,7 @@
                 android:ems="10"
                 android:text="enter text" android:inputType="text">
                 <AutoCompleteTextView
-                    android:id="@+id/auto_complete_txt"
+                    android:id="@+id/auto_complete_textview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none"/>
