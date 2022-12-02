@@ -64,7 +64,8 @@ public class HomeFragment extends Fragment {
 
     public void handleFood(View v) {
         int rnd = new Random().nextInt(item.length);
-        ((TextView) getView().findViewById(R.id.foodName)).setText(String.valueOf(item[rnd]));
+
+        ((TextView) getView().findViewById(R.id.foodName)).setText(String.valueOf(item[rnd].toLowerCase()));
     }
 
     public void randomize(View v) {
