@@ -150,6 +150,7 @@
                         android:src="@drawable/cutlery" />
 
                     <TextView
+                        android:id="@+id/foodnumber"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -168,7 +169,7 @@
                         android:textSize="24sp" />
 
                     <ImageButton
-                        android:id="@+id/simpleImageButton"
+                        android:id="@+id/shufflebutton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
