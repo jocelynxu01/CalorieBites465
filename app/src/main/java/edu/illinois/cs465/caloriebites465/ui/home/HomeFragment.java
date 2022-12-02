@@ -49,7 +49,7 @@ public class HomeFragment extends Fragment {
         });
 
         // search
-        ImageButton btn = (ImageButton) root.findViewById(R.id.shufflebutton);
+        ImageButton btn = (ImageButton) root.findViewById(R.id.shuffleButton);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,12 +63,17 @@ public class HomeFragment extends Fragment {
     }
 
     public void handleFood(View v) {
-        int random = new Random().nextInt(item.length);
+        int rnd = new Random().nextInt(item.length);
+        ((TextView) getView().findViewById(R.id.foodName)).setText(String.valueOf(item[rnd]));
     }
 
     public void randomize(View v) {
-        int number = new Random().nextInt(11) + 1; // [0, 4000] + 2000 => [2000, 6000]
-        ((TextView) getView().findViewById(R.id.foodnumber)).setText(String.valueOf(number));
+        int steps = new Random().nextInt(4001) + 2000; // [0, 4000] + 2000 => [2000, 6000]
+        int calories = new Random().nextInt(901) + 100; // [0, 900] + 100 => [100, 1000]
+        int number = new Random().nextInt(9) + 1; // [0, 8] + 1 => [1, 9]
+        ((TextView) getView().findViewById(R.id.numFood)).setText(String.valueOf(number));
+        ((TextView) getView().findViewById(R.id.numSteps)).setText(String.valueOf(steps));
+        ((TextView) getView().findViewById(R.id.numCalories)).setText(String.valueOf(calories));
     }
 
     @Override

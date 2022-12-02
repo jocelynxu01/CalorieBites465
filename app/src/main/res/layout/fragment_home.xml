@@ -74,6 +74,7 @@
                         android:src="@drawable/walking" />
 
                     <TextView
+                        android:id="@+id/numSteps"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -112,6 +113,7 @@
                         android:src="@drawable/crown" />
 
                     <TextView
+                        android:id="@+id/numCalories"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -150,7 +152,7 @@
                         android:src="@drawable/cutlery" />
 
                     <TextView
-                        android:id="@+id/foodnumber"
+                        android:id="@+id/numFood"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -160,6 +162,7 @@
                         android:textSize="60sp" />
 
                     <TextView
+                        android:id="@+id/foodName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -169,7 +172,7 @@
                         android:textSize="24sp" />
 
                     <ImageButton
-                        android:id="@+id/shufflebutton"
+                        android:id="@+id/shuffleButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
