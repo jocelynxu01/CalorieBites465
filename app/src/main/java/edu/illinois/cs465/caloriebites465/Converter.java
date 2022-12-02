@@ -1,5 +1,6 @@
 package edu.illinois.cs465.caloriebites465;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -60,6 +61,12 @@ public class Converter extends AppCompatActivity {
                 randomize(v);
             }
         });
+
+//        ActionBar actionBar = getSupportActionBar();
+//        if (actionBar != null) {
+//            actionBar.setDisplayHomeAsUpEnabled(true);
+//            actionBar.setTitle("Convertor 2");
+//        }
     }
 
     public void handleNumber(View v) {
@@ -74,4 +81,10 @@ public class Converter extends AppCompatActivity {
         ((TextView) findViewById(R.id.numSteps)).setText(String.valueOf(steps));
         ((TextView) findViewById(R.id.numFood)).setText(String.valueOf(food));
     }
+
+//    @Override
+//    public boolean onSupportNavigateUp() {
+//        onBackPressed();
+//        return true;
+//    }
 }
