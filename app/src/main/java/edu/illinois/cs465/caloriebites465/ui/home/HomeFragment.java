@@ -25,7 +25,7 @@ import edu.illinois.cs465.caloriebites465.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
 
-    String[] item = {"Apples", "Oranges", "Bananas", "Hamburgers", "Pizza Slice", "PBJ Sandwich", "Oreo Cookies", "Potato Chips"};
+    String[] item = {"Apples", "Oranges", "Bananas", "Hamburgers", "Snakes", "Rats", "Broccoli", "Cilantro"};
 
     private FragmentHomeBinding binding;
 
@@ -69,12 +69,8 @@ public class HomeFragment extends Fragment {
     }
 
     public void randomize(View v) {
-        int steps = new Random().nextInt(4001) + 2000; // [0, 4000] + 2000 => [2000, 6000]
-        int calories = new Random().nextInt(901) + 100; // [0, 900] + 100 => [100, 1000]
         int number = new Random().nextInt(9) + 1; // [0, 8] + 1 => [1, 9]
         ((TextView) getView().findViewById(R.id.numFood)).setText(String.valueOf(number));
-        ((TextView) getView().findViewById(R.id.numSteps)).setText(String.valueOf(steps));
-        ((TextView) getView().findViewById(R.id.numCalories)).setText(String.valueOf(calories));
     }
 
     @Override
