@@ -1,5 +1,6 @@
 package edu.illinois.cs465.caloriebites465;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -23,15 +24,7 @@ public class Rewards extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rewards2);
 
-        ImageButton back = (ImageButton) findViewById(R.id.imageButton);
         NotificationsFragment notificationsFragment = new NotificationsFragment();
-
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, notificationsFragment).addToBackStack(Rewards.class.getSimpleName()).commit();
-            }
-        });
 
         // Initializing Settings Button
         ImageButton dumpling_btn = (ImageButton) findViewById(R.id.imageView5);
@@ -63,5 +56,17 @@ public class Rewards extends AppCompatActivity {
                 startActivity(chooser);
             }
         });
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("Reward Details");
+        }
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }
