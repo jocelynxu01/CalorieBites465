@@ -65,9 +65,18 @@ public class Converter extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setTitle("Convertor 2");
+            //actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("Convertor");
         }
+
+        Button food_btn = (Button) findViewById(R.id.foodTab);
+
+        food_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     public void handleNumber(View v) {
@@ -83,9 +92,9 @@ public class Converter extends AppCompatActivity {
         ((TextView) findViewById(R.id.numFood)).setText(String.valueOf(food));
     }
 
-    @Override
+    /*@Override
     public boolean onSupportNavigateUp() {
         onBackPressed();
         return true;
-    }
+    }*/
 }
