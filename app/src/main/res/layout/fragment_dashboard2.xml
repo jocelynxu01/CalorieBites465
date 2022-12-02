@@ -210,8 +210,8 @@
                 android:layout_centerInParent="true"
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="55dp"
-                android:textAllCaps="false"
-                android:text="Search" />
+                android:text="Search"
+                android:textAllCaps="false" />
 
         </RelativeLayout>
 
