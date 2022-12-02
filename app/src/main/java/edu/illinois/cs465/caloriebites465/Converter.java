@@ -25,15 +25,16 @@ public class Converter extends AppCompatActivity {
         binding = ActivityConverterBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.foodTab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                DashboardFragment fragment = new DashboardFragment();
-                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.fragment1, fragment);
-                transaction.commit();
-            }
-        });
+//        binding.foodTab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                DashboardFragment fragment = new DashboardFragment();
+//                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+//                transaction.replace(R.id.container, fragment);
+//                transaction.addToBackStack(null);
+//                transaction.commit();
+//            }
+//        });
 
 //        Button foodTab = (Button) findViewById(R.id.foodTab);
 //
@@ -62,11 +63,11 @@ public class Converter extends AppCompatActivity {
             }
         });
 
-//        ActionBar actionBar = getSupportActionBar();
-//        if (actionBar != null) {
-//            actionBar.setDisplayHomeAsUpEnabled(true);
-//            actionBar.setTitle("Convertor 2");
-//        }
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("Convertor 2");
+        }
     }
 
     public void handleNumber(View v) {
@@ -82,9 +83,9 @@ public class Converter extends AppCompatActivity {
         ((TextView) findViewById(R.id.numFood)).setText(String.valueOf(food));
     }
 
-//    @Override
-//    public boolean onSupportNavigateUp() {
-//        onBackPressed();
-//        return true;
-//    }
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
 }
